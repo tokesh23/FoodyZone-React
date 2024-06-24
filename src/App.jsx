@@ -4,12 +4,12 @@ import Navbar from './components/Navbar';
 import FoodOrder from './components/FoodOrder';
 import './App.css';
 
-export const BASE_URL = "http://localhost:9000";
+export const BASE_URL = "http://lobcalhost:9000";
 
 const App = () => {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");  
-   
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,6 +21,7 @@ const App = () => {
       }
     };
 
+    
     fetchData();
   }, []);
 
